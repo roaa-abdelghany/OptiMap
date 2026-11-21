@@ -1,0 +1,16 @@
+{
+  "project": "OptiMap",
+  "dataset_version": "1.0",
+  "random_seed": 42,
+  "state_count": 5000,
+  "undirected_road_count": 9850,
+  "directed_arc_count_if_expanded": 19700,
+  "grid_rows": 50,
+  "grid_columns": 100,
+  "grid_spacing_km": 0.2,
+  "topology": "Fully connected rectangular 4-neighbor grid; all roads are two-way",
+  "cost": "Positive travel_time_min calculated from distance, speed limit, and traffic factor",
+  "heuristic_note": "For straight-line distance in km, h(n)=distance_to_goal_km minutes is a lower bound because speed_limit_kmh <= 60 and traffic_factor >= 1.0.",
+  "start_example": "N0001",
+  "goal_example": "N5000"
+}
